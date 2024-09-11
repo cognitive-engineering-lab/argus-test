@@ -4,6 +4,8 @@ allow_tables_to_appear_in_same_query!(
     users, posts,
 );
 
+joinable!(posts -> users (user_id));
+
 table! {
     users(id) {
         id -> Integer,
