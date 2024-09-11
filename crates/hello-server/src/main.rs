@@ -6,7 +6,7 @@ struct LoginAttempt {
   password: String,
 }
 
-fn login(attempt: LoginAttempt) -> bool {
+async fn login(attempt: LoginAttempt) -> bool {
   todo!()
 }
 
